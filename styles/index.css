@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "quicksand", sans-serif;
+}
+h1 {
+    font-size: 46px;
+}
+h3 {
+    font-size: 20px;
+}
+.bg-black {
+    background-color: black;
+}
+.border-test {
+    border: 4px solid white;
+    padding: 5px 7.5px;
+}
+.header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav a {
+    text-decoration: none;
+    color: orange;
+    padding: 0 15px;
+}
+.hero-image {
+    background-image: url("../images/fabrizio-magoni-boaDpmC-_Xo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.hero-image2 {
+    margin: 50px;
+    background-image: url("../images/barbecue-2187508_1920.jpg");
+    background-size:cover;
+    background-position: center;
+    min-height: 485px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.bg-orange {
+    background-color: orange;
+}
+.center-content {
+    text-align: center;
+}
+.padding {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.padding-btm {
+    padding-bottom: 75px;
+    position: relative;
+}
+.padding-btn {
+    padding-bottom: 150px;
+    position: relative;
+}
+.footer {
+    flex-wrap: wrap; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+    padding: 60px 75px;
+}
+.img-circle {
+    border-radius: 700px;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.center-content2 {
+    display: flex;
+    justify-content: center;
+}
+.flex-container {
+    display: flex;
+}
+.col-6 {
+    padding: 0 6px;
+    flex-basis: 50%;
+}
+.text-center {
+    justify-content: center;
+    align-items: center;
+}
+.text-align-left {
+    text-align: left;
+    color: white;
+}
+.full-height {
+    height: 100%;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.max-width {
+    max-width: 1032px;
+}
+.btn {
+    border: 0;
+    color: white;
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #384B70;
+    left: 50%;
+    position: absolute;
+    top: 475px;
+    display: inline-block;
+    transform: translateX(-50%);
+    outline: 2px solid white;
+    outline-offset: -14px;
+    padding: 24px 40px;
+    white-space: nowrap;
+    max-width: 100%
+}
+.btn2 {
+    border: 0;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+    outline: 2px solid black;
+    outline-offset: -14px;
+    bottom: 300px;
+    padding: 18px 36px;
+    white-space: nowrap;
+}
+.btn2b {
+    border: 0;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+    outline: 2px solid black;
+    outline-offset: -14px;
+    bottom: 70px;
+    padding: 18px 36px;
+    white-space: nowrap;
+}
+.btn:hover { 
+    cursor: pointer;
+    background-color: #59657b;
+}
+.btn2:hover { 
+    cursor: pointer;
+    background-color: rgb(201, 131, 0);
+}
+.btn2b:hover { 
+    cursor: pointer;
+    background-color: rgb(201, 131, 0);
+}
+.btn3 {
+    border: 0;
+    justify-content: center;
+    color: white;
+    font-family: inherit;
+    font-size: 48px;
+    text-decoration: underline;
+    background-color: #384B70;
+    height: 300px;
+    width: 300px;
+    outline: 2px solid white;
+    outline-offset: -14px;
+    margin: 100px 100px;
+}
+.btn3:hover { 
+    cursor: pointer;
+    background-color: #59657b;
+}
+.nowrap {
+    white-space: nowrap;
+}
+@media (max-width: 600px) {
+    .col-6 {
+        flex-basis: 100%;
+    }
+    .btn {
+        font-size: 20px;
+        top: 220px;
+    }
+    .btn2 {
+        font-size: 20px;
+        bottom: 200px;
+    }
+    .btn2b {
+        font-size: 20px;
+        bottom: 15px;
+    }
+    .padding-btn {
+        padding-bottom: 50px;
+    }
+    .hero-image {
+        min-height: 325px;
+    }
+    .hero-image2 {
+        min-height: 325px;
+        margin: 0;
+    }
+    .flex-container {
+        text-align: center;
+    }
+    .nav {
+        display: none;
+    }
+    .navmenu {
+        display: block;
+    }
+    .btn3 {
+        font-size: 32px;
+        height: 200px;
+        width: 200px;
+        margin: 30px 30px;
+    }
+    .footer a {
+        padding: 10px 15px;
+    }
+}  
+@media (min-width: 600px) {
+    .navmenu {
+        display: none;
+    }
+
+}
+@media (min-width: 1700px) {
+    .hero-image {
+        min-height: 1050px;
+    }
+    .btn {
+        top: 750px;
+        }
+    
+}
+
+
